@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/da254593e1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+    <h1>Password Generator</h1>
+
+    <div class="display-container">
+        <input readonly placeholder="password" class="display" data-passwordDisplay>
+
+        <button data-copy>
+            <span data-copyMsg></span>
+            <!-- <img src="" alt="copy" width="23" height="23"> -->
+            <i class="fa-regular fa-copy"></i>
+        </button>
+    </div>
+
+    <div class="input-container">
+
+        <div class="length-container">
+            <p>Password Length</p>
+            <p data-lengthNumber>1</p>
+        </div>
+
+        <!-- slider -->
+
+        <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+        <!-- Checkboxes -->
+
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Include Uppercase Letter(s)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Include Lowercase Letter(s)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Include Numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Include Special Characters</label>
+        </div>
+
+        <!-- Strength check section -->
+
+        <div class="strength-container">
+            <p>Strength</p>
+            <div class="indicator"  data-indicator></div>
+        </div>
+
+        <!-- button -->
+
+        <button class="generateBtn">Generate Password</button>
+
+    </div>
+
+</div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
